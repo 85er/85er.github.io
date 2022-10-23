@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Fuentes de Google</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto" rel="stylesheet"> 
+    
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Inconsolata');
+    h1 {
+    font-family: 'Lora', serif;
+    color: purple;
+    text-shadow: 4px 4px 4px #aaa;
+
+    }
+    p {
+        font-family: 'Roboto', sans-serif;
+    }
+    .himport{
+        font-family: 'Fuzzy Bubbles', cursive;
+    }
+    .pimport{
+        font-family: 'Inconsolata', monospace;
+    }
+</style>
+</head>
+<body>
+    <h1>Cómo importar familias de fuentes a través de link</h1>
+    <p>Se establece el link con las distintas familias de fuentes a utilizar. Para ello se emplea el "&" para seleccionar más de una familia</p>
+    <code> &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+        &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+        &lt;link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto" rel="stylesheet"&gt; </code>
+
+    <p>Una vez indicado el link de las familias se ha de referenciar en la hoja de estilos CSS</p>
+    <code>h1 {
+        font-family: 'Lora', serif;
+        }
+        p {
+            font-family: 'Roboto', sans-serif;
+        }</code>
+    <h1>Ejemplo de título</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores tempore cum rerum soluta? Voluptate voluptatibus maxime nulla, at officiis eius temporibus mollitia delectus. Necessitatibus expedita laborum quia beatae quae esse?</p>
+    <h1 class="himport">Cómo importar familias de fuentes a través de @import</h1>
+    <p class="pimport">Al igual que con link, "@import" importa las familias de fuentes y se referencia a través del CSS. No obstante, en este caso debe colocarse dentro de la hoja de estilos. </p>
+    <code> @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Inconsolata');</code><br>
+
+    <a href="../index.html">Inicio</a>
+
+</body>
+</html>
