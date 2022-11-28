@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iconos Material Icons</title>
+    <style>
+     @font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/MaterialIcons-Regular.ttf); /* For IE6-8 */
+  src: url(./fonts/MaterialIconsOutlined-Regular.otf); /* For IE6-8 */
+
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+ /*   url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');*/
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+.material-icons.md-48 { font-size: 48px;
+        
+      }
+      .material-icons.md-dark { color:purple; }
+      .material-icons.md-dark.md-inactive { 
+          color: orange;
+          background-color: purple; }
+      h1,h2,h3 {
+          font-family:Cambria;
+          color: purple;
+
+      }
+      ul {
+  list-style-type: none;
+}
+
+
+      
+    </style>
+</head>
+<body>
+    <h1>Práctica de uso de iconos con fuentes descargadas localmente</h1>
+	<body>
+  <h1>Insertar iconos locales</h1>
+<code>
+  @font-face {<br>
+    font-family: 'Material Icons';<br>
+    font-style: normal;<br>
+    font-weight: 400;<br>
+    src: url(./fonts/MaterialIcons-Regular.ttf); /* For IE6-8 */<br>
+    src: local('Material Icons'),<br>
+      local('MaterialIcons-Regular'),<br>
+      url(./fonts/MaterialIcons-Regular.ttf) format('ttf');<br>
+  }<br>
+
+
+</code>
+
+  <h2>Librería de Font-Family de Google <a href="https://fonts.google.com/icons?selected=Material+Icons"><span class="material-icons">link</span></a></h2>
+  
+  <h2>Fuentes de Iconos Google en GitHub <a href="https://github.com/google/material-design-icons/tree/master/font"><span class="material-icons">link</span></a></h2>
+  
+  <h2>Ejemplo de tamaño</h2>
+<a href="https://85er.github.io"><span class="material-icons md-48">home</span></a>
+
+<h2>Ejemplo de color</h2>
+<a href="https://fonts.google.com/icons?selected=Material+Icons"><span class="material-icons md-48 md-dark md-inactive">face</span></a>
+
+<h2>Ejemplo de botón</h2>
+
+<button><a href="https://www.google.es"><span class="material-icons md-48">face</span></a></button>
+
+<h2>Ejemplo de menú</h2>
+<ul>
+<li><a href="https://fonts.google.com/icons?selected=Material+Icons"><span class="material-icons md-dark">face</span></a></li>
+<li><a href="https://fonts.google.com/icons?selected=Material+Icons"><span class="material-icons md-dark">home</span></a></li>
+<li><a href="https://fonts.google.com/icons?selected=Material+Icons"><span class="material-icons md-dark">perm_identity</span></a></li>
+<li><a href="https://fonts.google.com/icons?selected=Material+Icons"><span class="material-icons md-dark">watch_later</span></a></li>
+</ul>
+    <a href="./t1.html">Volver</a>
+    
+</body>
+</html>
