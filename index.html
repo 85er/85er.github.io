@@ -4,23 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <title>Diseño de Interfaces Web</title>
-    <link rel="stylesheet" href="./css/estilo.css">
+    <!-- <link rel="stylesheet" href="../css/estilo.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Importación de los iconos de Material-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-<header>    
-    <div><h1 align="center">Diseño de Interfaces Web</h1></div>
-<ul>
-    <li><a href="./misc/misc.html">General</a></li>
-    <li><a href="./t1/t1.html">Tema 1. Planificación de interfaces gráficas</a></li>
-    <li><a href="./t2/t2.html">Tema 2. Uso de estilos</a></li>
-    <li><a href="./t3/t3.html">Tema 3. Implantación de contenido multimedia</a></li>
-    <li><a href="./t4/t4.html">Tema 4. Diseño de webs accesibles</a></li>
-    <li><a href="./t5/t5.html">Tema 5. Implementación de la usabilidad de la web</a></li>
+<header>
+    <div class="navbar-fixed">
+    <nav class="nav-wrapper purple darken-3">
+        <div class="container">
 
-</ul>
+            <a href="./index.html" class="brand-logo">Logo Javier</a>
+            <a href="#" data-target="menu-hamburguesa" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="./misc/misc.html">General</a></li>
+                    <li><a href="./t1/t1.html">Tema 1</a></li>
+                    <li><a href="./t2/t2.html">Tema 2</a></li>
+                    <li><a href="./t3/t3.html">Tema 3</a></li>
+                    <li><a href="./t4/t4.html">Tema 4</a></li>
+                    <li><a href="./t5/t5.html">Tema 5</a></li>
+                
+                </ul>
+
+        </div>
+    </nav>
+</div>
+
+    <ul class="sidenav" id="menu-hamburguesa">
+        <li><a class="purple-text text-darken-3" href="./misc/misc.html"><i class="material-icons purple-text text-darken-3">info</i>General</a></li>
+                    <li><a class="purple-text text-darken-3" href="./t1/t1.html"><i class="material-icons purple-text text-darken-3">chevron_right</i>Tema 1. Planificación</a></li>
+                    <li><a class="purple-text text-darken-3" href="./t2/t2.html"><i class="material-icons purple-text text-darken-3">chevron_right</i>Tema 2. Uso de estilos</a></li>
+                    <li><a class="purple-text text-darken-3" href="./t3/t3.html"><i class="material-icons purple-text text-darken-3">chevron_right</i>Tema 3. Multimedia</a></li>
+                    <li><a class="purple-text text-darken-3" href="./t4/t4.html"><i class="material-icons purple-text text-darken-3">chevron_right</i>Tema 4. Accesibilidad</a></li>
+                    <li><a class="purple-text text-darken-3" href="./t5/t5.html"><i class="material-icons purple-text text-darken-3">chevron_right</i>Tema 5. Usabilidad</a></li>
+    </ul>
+    
 </header>
+<section class="section">
+    <div class="container">
 
+        <div class="row">
+            <div class="col s12 m12 l12">
+        <img class="responsive-img z-depth-4" src="https://wallpaperaccess.com/full/1657858.jpg" alt="imagen">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m12 l12">
+            <blockquote style="border-left-color: #6a1b9a">
+                <p class="flow-text">Bienvenidos a mi página web del curso de Diseño de Interfaces Web</p>
+            </blockquote>
+        </div>
+    </div>
+        </article>
 
+</div>
+</section>
+<footer>
+
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+        M.AutoInit();
+    });
+</script>
 </body>
 
 
