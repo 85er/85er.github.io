@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Diseño de Interfaces Web</title>
-    <!-- <link rel="stylesheet" href="../css/estilo.css"> -->
+    <link rel="stylesheet" href="../css/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--Importación de los iconos de Material-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,16 +15,16 @@
     <nav class="nav-wrapper purple darken-3">
         <div class="container">
 
-            <a href="./index.html" class="brand-logo">Logo Javier</a>
+            <a href="./index.html" class="brand-logo">Logo</a>
             <a href="#" data-target="menu-hamburguesa" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="./misc/misc.html">General</a></li>
-                    <li><a href="./t1/t1.html">Tema 1</a></li>
-                    <li><a href="./t2/t2.html">Tema 2</a></li>
-                    <li><a href="./t3/t3.html">Tema 3</a></li>
-                    <li><a href="./t4/t4.html">Tema 4</a></li>
-                    <li><a href="./t5/t5.html">Tema 5</a></li>
+                    <li><a href="#general">General</a></li>
+                    <li><a href="#t1">Tema 1</a></li>
+                    <li><a href="#t2">Tema 2</a></li>
+                    <li><a href="#t3">Tema 3</a></li>
+                    <li><a href="#t4">Tema 4</a></li>
+                    <li><a href="#t5">Tema 5</a></li>
                 
                 </ul>
 
@@ -32,17 +32,17 @@
     </nav>
 </div>
 
-    <ul class="sidenav" id="menu-hamburguesa">
-        <li><a class="purple-text text-darken-3" href="./misc/misc.html"><i class="material-icons purple-text text-darken-3">info</i>General</a></li>
-                    <li><a class="purple-text text-darken-3" href="./t1/t1.html"><i class="material-icons purple-text text-darken-3">chevron_right</i>Tema 1. Planificación</a></li>
-                    <li><a class="purple-text text-darken-3" href="./t2/t2.html"><i class="material-icons purple-text text-darken-3">chevron_right</i>Tema 2. Uso de estilos</a></li>
-                    <li><a class="purple-text text-darken-3" href="./t3/t3.html"><i class="material-icons purple-text text-darken-3">chevron_right</i>Tema 3. Multimedia</a></li>
-                    <li><a class="purple-text text-darken-3" href="./t4/t4.html"><i class="material-icons purple-text text-darken-3">chevron_right</i>Tema 4. Accesibilidad</a></li>
-                    <li><a class="purple-text text-darken-3" href="./t5/t5.html"><i class="material-icons purple-text text-darken-3">chevron_right</i>Tema 5. Usabilidad</a></li>
+    <ul class="sidenav" id="menu-hamburguesa" style="width:80%;">
+        <li><a class="purple-text text-darken-3" href="#general"><i class="material-icons purple-text text-darken-3">info</i>General</a></li>
+                    <li><a class="purple-text text-darken-3" href="#t1"><i class="material-icons purple-text text-darken-3">chevron_right</i>Tema 1. Planificación de interfaces gráficas</a></li>
+                    <li><a class="purple-text text-darken-3" href="#t2"><i class="material-icons purple-text text-darken-3">chevron_right</i>Tema 2. Uso de estilos</a></li>
+                    <li><a class="purple-text text-darken-3" href="#t3"><i class="material-icons purple-text text-darken-3">chevron_right</i>Tema 3. Implantación de contenido multimedia</a></li>
+                    <li><a class="purple-text text-darken-3" href="#t4"><i class="material-icons purple-text text-darken-3">chevron_right</i>Tema 4. Diseño de webs accesibles</a></li>
+                    <li><a class="purple-text text-darken-3" href="#t5"><i class="material-icons purple-text text-darken-3">chevron_right</i>Tema 5. Implementación de la usabilidad de la web</a></li>
     </ul>
     
 </header>
-<section class="section">
+<main class="principal">
     <div class="container">
 
         <div class="row">
@@ -57,10 +57,138 @@
             </blockquote>
         </div>
     </div>
-        </article>
+
+    <div class="card" id="general">
+        <div class="card-content">
+          <h3>General</h3>
+        </div>
+        <div class="card-tabs">
+          <ul class="tabs tabs-fixed-width purple darken-3">
+            <li class="tab"><a class="active" href="#gdocu">Documentación</a></li>
+            <li class="tab"><a href="#glinks">Enlaces de interés</a></li>
+          </ul>
+        </div>
+        <div class="card-content grey lighten-4">
+          <div id="gdocu">
+            <ul>
+                
+                <li>Herramientas de desarrollo de Firefox</li><a href="./misc/firefox.pdf"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">description</span></a>
+                <li>Herramientas de desarrollo de Chrome<a href="https://developer.chrome.com/docs/devtools/"><span class="material-icons purple-text text-darken-3">link</span></a></li>
+                <li>Herramientas de desarrollo de Microsoft Edge<a href="https://learn.microsoft.com/es-es/microsoft-edge/devtools-guide-chromium/landing/"><span class="material-icons purple-text text-darken-3">link</span></a></li>
+        
+            </ul></div>
+          <div id="glinks">
+            <ul>  
+                    <li>devdocs.io<a href="https://devdocs.io/settings"><span class="material-icons purple-text text-darken-3">link</span></a></li>
+                    <li>markodenic.com - Herramientas y recursos<a href="https://markodenic.com/50-free-tools-and-resources/"><span class="material-icons purple-text text-darken-3">link</span></a></li>
+                    <li>markodenic.com - Consejos para HTML<a href="https://markodenic.com/html-tips/"><span class="material-icons purple-text text-darken-3">link</span></a></li>
+            
+                </ul></div>
+          </div>
+        </div>
+       
+  <div class="card" id="t1">
+    <div class="card-content">
+      <h3>Tema 1. Planificación de interfaces gráficas</h3>
+    </div>
+    <div class="card-tabs">
+      <ul class="tabs tabs-fixed-width purple darken-3">
+        <li class="tab"><a class="active" href="#t1prac">Prácticas</a></li>
+        <li class="tab"><a href="#t1herra">Herramientas</a></li>
+        <li class="tab"><a href="#t1doc">Documentación</a></li>
+      </ul>
+    </div>
+    <div class="card-content grey lighten-4">
+      <div id="t1prac"><ul>
+        <h4>Componentes</h4><hr>
+        <li>Anatomía del diseño: Componentes web</li><a href="./t1/docs/componentes.pdf"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">description</span></a>
+        <h4>Colores</h4><hr>
+        <li>Colores: El sistema de color</li><a href="./t1/docs/colores.pdf"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">description</span></a>
+        <li>Colores: Aplicar color a la interfaz de usuario</li><a href="./t1/docs/colores_interfaz.pdf"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">description</span></a>
+        <li>Paleta de Material Design (ejemplo no definitivo)</li><a href="./t1/docs/paleta_material.xml"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">description</span></a>
+        <li>Paleta de Paletton (ejemplo no definitivo)</li><a href="./t1/docs/paleta_paletton.html"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">description</span></a>
+        <h4>Iconos</h4><hr>
+        <li>Iconos Material Design</li><a href="./t1/docs/iconos2.html"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">web</span></a>
+        <li>Iconos Font Awesome</li><a href="./t1/docs/iconos3.html"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">web</span></a>
+        <li>Cargar iconos de manera local</li><a href="./t1/docs/iconos4.html"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">web</span></a>
+        <h4>Fuentes</h4><hr>
+        <li>Fuentes</li><a href="./t1/docs/fuentes.html"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">web</span></a>
+        <li>Importar fuentes de Google a través de link y @import</li><a href="./t1/docs/fuentes2.html"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">web</span></a>
+        <h4>Prototipado</h4><hr>
+        <li>Prototipado Balsamiq</li><a href="./t1/docs/balsamiq.pdf"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">description</span></a><a href="./docs/componentes.bmpr"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">description</span></a>
+        <li>Responsive Wireframing Balsamiq</li><a href="./t1/docs/responsive_wireframes.bmpr"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">description</span></a>
+        <li>Guía de estilos</li><a href="./t1/docs/guia_estilos.pdf"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">description</span></a>
+        <li>Prototipado de proyecto</li><a href="./t1/docs/musicdb.pdf"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">description</span></a><a href="./docs/musicdb.fig"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">description</span></a>
+    </ul></div>
+      <div id="t1herra"><ul>
+        <h4>Colores</h4><hr>
+        <li>Paleta de color de Material Design<a href="https://material.io/resources/color/#!/?view.left=0&view.right=0&secondary.color=FFA726&primary.color=5D4037&secondary.text.color=424242&primary.text.color=FF3D00"><span class="material-icons purple-text text-darken-3">link</span></a></li>
+        <li>Paleta de color de Paletton<a href="https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF"><span class="material-icons purple-text text-darken-3">link</span></a></li>
+        <h4>Prototipado</h4><hr>
+        <li>Balsamiq<a href="https://balsamiq.com"><span class="material-icons purple-text text-darken-3">link</span></a></li>
+        <li>Figma<a href="https://www.figma.com"><span class="material-icons purple-text text-darken-3">link</span></a></li>
+        <li>Bootstrap<a href="https://getbootstrap.com"><span class="material-icons purple-text text-darken-3">link</span></a></li>
+        <li>Plantillas de diseño de Bootstrap<a href="https://getbootstrap.com/docs/5.2/examples/"><span class="material-icons purple-text text-darken-3">link</span></a></li>
+        <li>Materialize<a href="https://materializecss.com/"><span class="material-icons purple-text text-darken-3">link</span></a></li>
+        <li>Plantillas de diseño de Materialize<a href="http://archives.materializecss.com/0.100.2/getting-started.html"><span class="material-icons purple-text text-darken-3">link</span></a></li>
+    </ul></div>
+      <div id="t1doc"><ul>
+        <h4>Componentes</h4><hr>
+        <li>Material Design<a href="https://material.io/"><span class="material-icons purple-text text-darken-3">link</span></a></li>
+        <h4>Iconos</h4><hr>
+        <li>Librería de iconos Google Fonts<a href="https://fonts.google.com/icons?selected=Material+Icons"><span class="material-icons purple-text text-darken-3">link</span></a></li>
+        <li>Iconos Font Awesome<a href="https://www.w3schools.com/css/css_icons.asp"><span class="material-icons purple-text text-darken-3">link</span></a></li>
+        <h4>Fuentes</h4><hr>
+        <li>Tipografías en CSS<a href="https://www.w3schools.com/css/css_font.asp"><span class="material-icons purple-text text-darken-3">link</span></a></li>
+        <li>Formato de las fuentes<a href="https://www.w3schools.com/css/css3_fonts.asp"><span class="material-icons purple-text text-darken-3">link</span></a></li>
+        <li>@font-face<a href="https://www.w3schools.com/cssref/css3_pr_font-face_rule.asp"><span class="material-icons purple-text text-darken-3">link</span></a></li>
+        <li>Entendiendo la tipografía<a href="https://m3.material.io/design/typography/understanding-typography.html"><span class="material-icons purple-text text-darken-3">link</span></a></li>
+        <h4>Prototipado</h4><hr>
+        <li>Guía de estilos de la Junta de Castilla y León<a href="http://www.jcyl.es/junta/guia/guia-estilos.html"><span class="material-icons purple-text text-darken-3">link</span></a></li>
+        <li>Guía de estilos de la Universidad Politécnica de Valencia<a href="http://www.upv.es/entidades/ASIC/manuales/guia_estilos_upv.pdf"><span class="material-icons purple-text text-darken-3">link</span></a></li>
+        <li>Guía de estilos de Starbucks<a href="https://www.starbucks.com/developer/pattern-library"><span class="material-icons purple-text text-darken-3">link</span></a></li>
+        <li>Guía de estilos de IBM<a href="https://www.ibm.com/design/language/"><span class="material-icons purple-text text-darken-3">link</span></a></li>
+        
+    </ul></div>
+    </div>
+  </div>
+
+  <div class="card" id="t2">
+    <div class="card-content">
+      <h3>Tema 2. Uso de estilos</h3>
+    </div>
+    <div class="card-tabs">
+      <ul class="tabs tabs-fixed-width purple darken-3">
+        <li class="tab"><a class="active" href="#t2prac">Prácticas</a></li>
+        <li class="tab"><a href="#t2herra">Herramientas</a></li>
+        <li class="tab"><a href="#t2doc">Documentación</a></li>
+      </ul>
+    </div>
+    <div class="card-content grey lighten-4">
+      <div id="t2prac"><ul>
+        <h4>Bootstrap</h4><hr>
+        <h4>Materialize</h4><hr>
+        <li>Clínica Estética con Parallax</li><a href="./t2/clinica/index.html"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">web</span></a>
+        <li>Prueba de componentes</li><a href="./t2/clinica/componentes.html"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">web</span></a>
+        <h4>Flexbox</h4><hr>
+        <li>Ejemplo con Flexbox</li><a href="./t2/maquetar_flex/index.html"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">web</span></a>
+        <li>Predicción del tiempo responsive</li><a href="./t2/tiempo/tiempo.html"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">web</span></a>
+    </ul></div>
+    <div id="t2herra"><ul>
+        <h4>Plantillas de Materialize</h4><hr>
+        <li>Parallax</li><a href="https://materializecss.com/templates/parallax-template.zip"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">description</span></a>
+        <li>Starter</li><a href="https://materializecss.com/templates/starter-template.zip"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">description</span></a>
+    </ul></div>
+      <div id="t2doc"><ul>
+        <li>Guía de Flexbox en W3Schools<a href="https://www.w3schools.com/css/css3_flexbox.asp"><span class="material-icons purple-text text-darken-3">link</span></a></li>
+        <li>Guía de Flexbox en MDN<a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox"><span class="material-icons purple-text text-darken-3">link</span></a></li>
+    </ul></div>
+    </div>
+  </div>
+</div>
 
 </div>
-</section>
+</main>
 <footer>
 
 </footer>

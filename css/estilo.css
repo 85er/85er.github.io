@@ -1,22 +1,12 @@
-body{
-background-color: white;
-font-family: roboto;
-}
-div{
-    background-color: rgb(67, 10, 121);
-}
-h1{
-    color: coral;
-}
-h4{
-    color: rgb(67, 10, 121);
-}
+
+/* @media (max-width: 480px){
+
+    li{
+    
+    font-size: 40px;
+    }
+
+    
+}  */
 
 
-.material-icons.md-30 { font-size: 30px;
-        
-}
-.material-icons.md-dark { color:purple; }
-.material-icons.md-dark.md-inactive { 
-color: purple;
-background-color: white; }
