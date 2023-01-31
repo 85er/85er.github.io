@@ -50,8 +50,7 @@ display: flex;
 justify-content: space-between;
 }
 
-
-@media (max-width: 450px){
+@media only screen and (max-width: 450px){
 
 	.logo{
 		width: 30%;
@@ -59,8 +58,11 @@ justify-content: space-between;
 		
 	}
 
+	/* .navbar-fixed{
+	} */
+
 	.sidenav{
-	font-size: large;
+	font-size: 30px;
 	}
 
 
