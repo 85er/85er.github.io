@@ -14,11 +14,6 @@
 	background-color:#4a148c;
 }
 
-.logo{
-	width: 30%;
-	max-height: 100%;
-}
-
 nav ul li:hover {
 	background-color: #7c43bd;
 
@@ -28,9 +23,10 @@ nav ul li:hover {
 	
  }
 
- /* .brand-logo{
-	background-color: orange;
-} */
+ .brand-logo{
+	width: 10%;
+	height: 100%;
+}
 h3{
 	font-family: 'Lora', serif;
 	font-weight: bold;
@@ -50,20 +46,15 @@ display: flex;
 justify-content: space-between;
 }
 
-@media only screen and (max-width: 450px){
 
-	.logo{
-		width: 30%;
-		max-height: 100%;
-		
+@media only screen and (max-width: 375px){
+
+	.brand-logo{
+		width: 10%;
+		height: 100%;
 	}
-
-	/* .navbar-fixed{
-	} */
-
-	.sidenav{
-	font-size: 30px;
-	}
+	
+	
 
 
 }
