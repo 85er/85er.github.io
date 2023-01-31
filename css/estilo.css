@@ -46,6 +46,11 @@ display: flex;
 justify-content: space-between;
 }
 
+#icono{
+float: right;
+font-size: 125%;
+}
+
 
 @media only screen and (max-width: 375px){
 
