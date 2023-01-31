@@ -4,18 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Diseño de Interfaces Web</title>
-    <!-- <link rel="stylesheet" href="./css/estilo.css"> -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--Importación de los iconos de Material-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto" rel="stylesheet">
+      <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
 <header>
-    <div class="navbar-fixed">
-    <nav class="nav-wrapper purple darken-3">
+    <div class="navbar-fixed z-depth-3">
+    <nav class="nav-wrapper purple darken-4">
         <div class="container">
 
-            <a href="./index.html" class="brand-logo"><svg width="30%" height="25%" viewBox="0 0 1136 852" xmlns="http://www.w3.org/2000/svg"><g fill="#ffffff"><path d="M555.22 220.33c24.26-.67 48.55-.12 72.82-.3h103.04c4.3.01 8.66-.24 12.89.77 10.17 2.16 19.24 8.84 24.45 17.83 5.68 9.62 6.61 21.84 2.56 32.24-4.4 11.55-14.84 20.58-26.94 23.14-4.61 1.12-9.39.83-14.08.86h-164c-34.9.38-69.27 15.6-93.06 41.11-24.69 25.9-37.85 62.3-35.31 98 2.04 33.83 18.17 66.43 43.58 88.8 23.38 20.93 54.48 32.99 85.87 33.22 9.13-.11 18.39 2.72 25.47 8.59 8.66 6.98 13.74 18.24 12.84 29.38-.8 9.65-3.84 19.58-10.61 26.75-6.06 6.51-14.98 9.76-23.74 10.12-41.91 1.05-84.02-11.45-118.61-35.13-31.29-21.36-56.55-51.47-72.13-86.01-16.74-36.91-21.8-78.84-15.11-118.75 7.45-45.43 31.17-87.77 65.35-118.5 34.02-30.94 78.83-49.57 124.72-52.12z"/><path d="M563.18 388.26c13.93-.55 27.89-.16 41.84-.26 44.68-.03 89.37.02 134.04.01 18.52 1.12 34.32 17.8 34.4 36.36.11 53.22.02 106.44.05 159.66-.08 6.32.44 12.78-1.25 18.96-2.88 11.25-11.35 20.84-22.11 25.19-13.48 5.66-30.12 2.46-40.45-7.93-6.77-6.61-10.92-15.87-11.19-25.34-.29-14.35.92-28.87-1.98-43.04-5.75-30.71-25.48-58.34-52.48-73.99a109.076 109.076 0 0 0-40.02-13.9c-10.27-1.51-20.68-1.04-31.02-1.11-4.35-.02-8.76.25-13.01-.78-10.66-2.22-20.12-9.39-25.21-19-5.04-9.3-5.78-20.77-2.1-30.67 4.65-12.87 16.88-22.61 30.49-24.16z"/></g></svg></a>
+            <a href="./index.html" class="brand-logo"><svg class="logo" viewBox="0 0 1136 852" xmlns="http://www.w3.org/2000/svg"><g fill="#ffffff"><path d="M555.22 220.33c24.26-.67 48.55-.12 72.82-.3h103.04c4.3.01 8.66-.24 12.89.77 10.17 2.16 19.24 8.84 24.45 17.83 5.68 9.62 6.61 21.84 2.56 32.24-4.4 11.55-14.84 20.58-26.94 23.14-4.61 1.12-9.39.83-14.08.86h-164c-34.9.38-69.27 15.6-93.06 41.11-24.69 25.9-37.85 62.3-35.31 98 2.04 33.83 18.17 66.43 43.58 88.8 23.38 20.93 54.48 32.99 85.87 33.22 9.13-.11 18.39 2.72 25.47 8.59 8.66 6.98 13.74 18.24 12.84 29.38-.8 9.65-3.84 19.58-10.61 26.75-6.06 6.51-14.98 9.76-23.74 10.12-41.91 1.05-84.02-11.45-118.61-35.13-31.29-21.36-56.55-51.47-72.13-86.01-16.74-36.91-21.8-78.84-15.11-118.75 7.45-45.43 31.17-87.77 65.35-118.5 34.02-30.94 78.83-49.57 124.72-52.12z"/><path d="M563.18 388.26c13.93-.55 27.89-.16 41.84-.26 44.68-.03 89.37.02 134.04.01 18.52 1.12 34.32 17.8 34.4 36.36.11 53.22.02 106.44.05 159.66-.08 6.32.44 12.78-1.25 18.96-2.88 11.25-11.35 20.84-22.11 25.19-13.48 5.66-30.12 2.46-40.45-7.93-6.77-6.61-10.92-15.87-11.19-25.34-.29-14.35.92-28.87-1.98-43.04-5.75-30.71-25.48-58.34-52.48-73.99a109.076 109.076 0 0 0-40.02-13.9c-10.27-1.51-20.68-1.04-31.02-1.11-4.35-.02-8.76.25-13.01-.78-10.66-2.22-20.12-9.39-25.21-19-5.04-9.3-5.78-20.77-2.1-30.67 4.65-12.87 16.88-22.61 30.49-24.16z"/></g></svg></a>
             <a href="#" data-target="menu-hamburguesa" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             
                 <ul class="right hide-on-med-and-down">
@@ -58,12 +60,12 @@
         </div>
     </div>
 
-    <div class="card purple lighten-5" id="general">
+    <div class="card z-depth-4" id="general">
         <div class="card-content">
-          <h3 class="purple-text text-darken-3">General</h3>
+          <h3 class="purple-text text-darken-4">General</h3>
         </div>
         <div class="card-tabs purple-text text-darken-3">
-          <ul class="tabs tabs-fixed-width purple lighten-5">
+          <ul class="tabs tabs-fixed-width">
             <li class="tab flow-text"><a class="active" href="#gdocu">Documentación</a></li>
             <li class="tab flow-text"><a href="#glinks">Enlaces de interés</a></li>
           </ul>
@@ -87,12 +89,12 @@
           </div>
         </div>
        
-  <div class="card purple lighten-5" id="t1">
+  <div class="card z-depth-4" id="t1">
     <div class="card-content">
-      <h3 class="purple-text text-darken-3">Tema 1. Planificación de interfaces gráficas</h3>
+      <h3 class="purple-text text-darken-4">Tema 1. Planificación de interfaces gráficas</h3>
     </div>
     <div class="card-tabs">
-      <ul class="tabs tabs-fixed-width purple lighten-5">
+      <ul class="tabs tabs-fixed-width">
         <li class="tab flow-text"><a class="active" href="#t1prac">Prácticas</a></li>
         <li class="tab flow-text"><a href="#t1herra">Herramientas</a></li>
         <li class="tab flow-text"><a href="#t1doc">Documentación</a></li>
@@ -105,8 +107,8 @@
         <h4>Colores</h4><hr>
         <li class="flow-text">Colores: El sistema de color</li><a href="./t1/docs/colores.pdf"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">description</span></a>
         <li class="flow-text">Colores: Aplicar color a la interfaz de usuario</li><a href="./t1/docs/colores_interfaz.pdf"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">description</span></a>
-        <li class="flow-text">Paleta de Material Design (ejemplo no definitivo)</li><a href="./t1/docs/paleta_material.xml"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">description</span></a>
-        <li class="flow-text">Paleta de Paletton (ejemplo no definitivo)</li><a href="./t1/docs/paleta_paletton.html"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">description</span></a>
+        <li class="flow-text">Paleta de Material Design</li><a href="./t1/docs/paleta_material.xml"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">description</span></a>
+        <li class="flow-text">Paleta de Paletton</li><a href="./t1/docs/paleta_paletton.html"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">description</span></a>
         <h4>Iconos</h4><hr>
         <li class="flow-text">Iconos Material Design</li><a href="./t1/docs/iconos2.html"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">web</span></a>
         <li class="flow-text">Iconos Font Awesome</li><a href="./t1/docs/iconos3.html"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">web</span></a>
@@ -149,12 +151,12 @@
     </div>
   </div>
 
-  <div class="card purple lighten-5" id="t2">
+  <div class="card z-depth-4" id="t2">
     <div class="card-content">
-      <h3 class="purple-text text-darken-3">Tema 2. Uso de estilos</h3>
+      <h3 class="purple-text text-darken-4">Tema 2. Uso de estilos</h3>
     </div>
     <div class="card-tabs">
-      <ul class="tabs tabs-fixed-width purple lighten-5">
+      <ul class="tabs tabs-fixed-width">
         <li class="tab flow-text"><a class="active" href="#t2prac">Prácticas</a></li>
         <li class="tab flow-text"><a href="#t2herra">Herramientas</a></li>
         <li class="tab flow-text"><a href="#t2doc">Documentación</a></li>
@@ -181,12 +183,44 @@
     </ul></div>
     </div>
   </div>
+
+  <div class="card z-depth-4" id="t3">
+    <div class="card-content">
+      <h3 class="purple-text text-darken-4">Tema 3. Implantación de contenido multimedia</h3>
+    </div>
+    <div class="card-tabs">
+      <ul class="tabs tabs-fixed-width">
+        <li class="tab flow-text"><a class="active" href="#t3prac">Prácticas</a></li>
+        <li class="tab flow-text"><a href="#t3herra">Herramientas</a></li>
+        <li class="tab flow-text"><a href="#t3doc">Documentación</a></li>
+      </ul>
+    </div>
+    <div class="card-content grey lighten-4">
+      <div id="t3prac"><ul>
+        <h4>Imágenes</h4><hr>
+        <h4>Vídeo</h4><hr>
+        <li class="flow-text">Controles de vídeo</li><a href="./t3/mivideo/video.html"><span class="material-icons md-30 md-dark md-inactive purple-text text-darken-3">web</span></a>
+    </ul></div>
+    <div id="t3herra"><ul>
+        
+    </ul></div>
+      <div id="t3doc"><ul>
+        
+    </ul></div>
+    </div>
+  </div>
 </div>
 
 </div>
 </main>
-<footer class="page-footer purple darken-3">
+<footer class="page-footer purple darken-4">
   <div class="container">
+    <div class="row">
+      <div class="col s12 m12 l12" id="pie">
+        <h6>IES Ribera de Castilla</h6>
+        <h6>Javier Getino Ferreras</h6>
+      </div>
+    </div>
 
   </div>
 

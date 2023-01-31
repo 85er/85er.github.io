@@ -1,14 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Inconsolata');
+
 .tabs .tab a{
-    color:#00ACC1;
+    color:#4a148c;
 }
 .tabs .tab a:hover,.tabs .tab a.active {
 	background-color:transparent;
-	color:#008B9B;
+	color:orangered;
 }
 .tabs .tab.disabled a,.tabs .tab.disabled a:hover {
-	color:rgba(102,147,153,0.7);	
+	color:#4a148c;	
 }
 .tabs .indicator {
-	background-color:#009BAD;
+	background-color:#4a148c;
 }
 
+.logo{
+	width: 30%;
+	max-height: 100%;
+}
+
+nav ul li:hover {
+	background-color: #7c43bd;
+
+ }
+ nav ul li a:hover {
+	color: orange;
+	
+ }
+
+ /* .brand-logo{
+	background-color: orange;
+} */
+h3{
+	font-family: 'Lora', serif;
+	font-weight: bold;
+}
+
+li{
+	font-weight:lighter;
+}
+
+.tab{
+	font-weight:normal;
+}
+
+
+#pie{
+display: flex;
+justify-content: space-between;
+}
+
+
+@media (max-width: 450px){
+
+	.logo{
+		width: 30%;
+		max-height: 100%;
+		
+	}
+
+	.sidenav{
+	font-size: large;
+	}
+
+
+}

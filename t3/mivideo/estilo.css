@@ -1,0 +1,23 @@
+
+.reproductor{
+    display: flex;
+    justify-content: center;
+}
+
+.controles {
+    display: flex;
+    justify-content:space-evenly;
+    padding-top: 2%;
+}
+
+.boton{
+    border: solid 1px darkslategrey;
+    padding: 0.5% 2%;
+    background-color: grey;
+}
+
+.boton:hover{
+    border: solid 1px lightcoral;
+    padding: 0.5% 2%;
+    background-color: lightgrey;
+}

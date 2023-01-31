@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de vídeo</title>
+    <link rel="stylesheet" href="./estilo.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="./eventos.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="reproductor">
+            <video width="600" height="431" controls="controls" id="video">
+                <source src="movie_clip.mp4" type="video/mp4" />
+                <source src="movie_clip.ogg" type="video/ogg" />
+                Tu navegador no soporta <video>. 
+             </video>
+        </div>
+        <div class="controles">
+            <div class="boton" id="back"><span class="material-icons md-48">skip_previous</span></div>
+            <div class="boton" id="play"><span class="material-icons md-48">play_arrow</span></div>
+            <div class="boton" id="pause"><span class="material-icons md-48">pause</span></div>
+            <div class="boton" id="stop"><span class="material-icons md-48">stop</span></div>
+        </div>
+    </div>
+</body>
+</html>
