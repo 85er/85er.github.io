@@ -61,6 +61,10 @@ font-size: 125%;
 	text-shadow: 1px 1px black;
   }
 
+  hr{
+	color: white;
+}
+
 
 @media only screen and (min-width: 300px) and (max-width: 475px){
 
