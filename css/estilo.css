@@ -47,7 +47,7 @@ justify-content: space-between;
 }
 
 #icono{
-float: right;
+float:inline-end;
 font-size: 125%;
 }
 
