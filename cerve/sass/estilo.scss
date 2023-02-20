@@ -1,0 +1,652 @@
+// IMPORTACIÓN DE FUENTES
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+// CONFIGURACIÓN DE DOCUMENTO
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none !important;
+  transition: all 0.2s linear;
+}
+
+// PALETA DE COLORES Y FUENTES
+
+$texto: "Montserrat", sans-serif;
+$titulo: "Lora", serif;
+$primario: #f9bf2d;
+$primario-oscuro: #c49000;
+$neutro-gris-claro: #666;
+$fondo-gris-claro: #eee;
+$neutro-negro: #000000;
+$neutro-blanco: #ffffff;
+$borde: 0.1rem solid $primario;
+$sombra: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+
+//MIXINS
+
+@mixin rejilla($valor) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($valor, 1fr));
+  gap: 2rem;
+}
+
+@mixin texto-titulo($parametro,$letra) {
+  font-family: $letra;
+  font-size: $parametro;
+  // text-transform: capitalize;
+  color: $neutro-negro;
+}
+
+@mixin texto-parrafo($parametro,$letra) {
+  font-family: $letra;
+  font-size: $parametro;
+  line-height: 2;
+  color: $neutro-gris-claro;
+  margin-bottom: 0;
+}
+
+// SCROLL
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+
+  // COLOR DEL SCROLL
+
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $primario;
+  }
+}
+
+// BOTÓN
+
+.boton-link {
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  display: inline-block;
+  border: $borde;
+  color: $primario;
+  background: none;
+  cursor: pointer;
+  font-size: 1.7rem;
+
+  &:hover {
+    background: $primario;
+    color: $neutro-blanco;
+  }
+}
+
+.cabecera {
+  text-align: center;
+  margin-bottom: 4rem;
+  @include texto-titulo(3rem,$titulo);
+}
+
+.header {
+  z-index: 1000;
+  padding: 4rem 0;
+  // background-color: $primario-oscuro;
+
+  &.mostrar {
+    padding: 2rem 0;
+    background: $primario-oscuro;
+  }
+
+  .logo {
+    font-size: 4.5rem;
+    color: $neutro-blanco;
+  }
+
+  // .logo{
+  // position: absolute;
+  // top: 0;
+  // font-size: 2.5rem;
+  // color: $neutro-blanco;
+  // font-weight: bolder;
+  // }
+
+  .nav {
+    a {
+      font-size: 2rem;
+      margin-right: 2rem;
+      color: $neutro-blanco;
+      &:hover {
+        text-decoration: underline !important;
+        text-underline-offset: 0.5rem;
+      }
+    }
+  }
+
+  .iconos div {
+    font-size: 2.5rem;
+    color: $neutro-blanco;
+    margin-left: 2rem;
+    cursor: pointer;
+  }
+
+  #boton-menu {
+    display: none;
+  }
+}
+
+// FORMULARIO
+
+@keyframes fadeIn {
+  0% {
+    transform: translate(-2rem);
+    opacity: 0;
+  }
+}
+
+section {
+  padding: 5rem 1rem;
+}
+
+.login-form {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+
+  &.mostrar {
+    display: flex;
+  }
+
+  form {
+    width: 50rem;
+    padding: 4rem;
+    background: $neutro-blanco;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 0.2s linear;
+
+    #cerrar-login-form {
+      position: absolute;
+      top: -4rem;
+      right: 0;
+      font-size: 3rem;
+      cursor: pointer;
+      color: $neutro-blanco;
+    }
+
+    h3 {
+      padding: 1rem 0;
+      @include texto-titulo(2rem,$titulo);
+      margin-top: 1rem;
+    }
+
+    .cuadro {
+      width: 100%;
+      padding: 1.2rem 1.4rem;
+      border: $borde;
+      font-size: 1.6rem;
+      margin: 1rem 0;
+    }
+
+    .dialogo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin: 1rem 0;
+
+      label {
+        @include texto-parrafo(1.5rem,$texto);
+        cursor: pointer;
+      }
+
+      a {
+        font-size: 1.5rem;
+        color: $primario;
+        margin-left: auto;
+
+        &:hover {
+          text-decoration: underline !important;
+        }
+      }
+    }
+
+    .boton-link {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    .cuenta {
+      padding: 1.5rem 0.5rem;
+      background: $fondo-gris-claro;
+      @include texto-parrafo(1.5rem,$texto);
+
+      a {
+        color: $primario;
+
+        &:hover {
+          text-decoration: underline !important;
+        }
+      }
+    }
+  }
+}
+
+// SECCIÓN INICIO
+
+.inicio {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/fondo.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  span {
+    font-size: 1.5rem;
+    color: $neutro-blanco;
+  }
+  h3 {
+    padding: 1rem 0;
+    font-size: 3rem;
+    color: $neutro-blanco;
+  }
+  .boton-link {
+    color: $neutro-blanco;
+    border-color: $neutro-blanco;
+  }
+}
+
+.info {
+  span {
+    font-size: 2.5rem;
+    color: $primario;
+  }
+
+  .titulo {
+    padding-top: 1rem;
+    @include texto-titulo(3rem,$titulo);
+  }
+
+  p {
+    padding: 1rem 0;
+    @include texto-parrafo(1.6rem,$texto);
+  }
+
+  .contenedor-iconos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    gap: 1.5rem;
+
+    .iconos {
+      padding: 2rem;
+      background: $fondo-gris-claro;
+      text-align: center;
+      flex: 1 1 14rem;
+
+      i {
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+        color: $primario;
+      }
+
+      h3 {
+        @include texto-titulo(1.5rem,$titulo);
+      }
+    }
+  }
+}
+
+// SECCIÓN CATÁLOGO
+
+.catalogo {
+  background: $fondo-gris-claro;
+
+  .contenedor-tarjetas {
+    @include rejilla(30rem);
+
+    .tarjeta {
+      text-align: center;
+      padding: 3rem 2rem;
+      border-radius: 0.5rem;
+
+      &:hover {
+        background: $neutro-blanco;
+        box-shadow: $sombra;
+        transform: translateY(-1rem);
+      }
+
+      img {
+        height: 15rem;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        @include texto-titulo(2rem,$titulo);
+      }
+
+      p {
+        padding: 1rem 0;
+        @include texto-parrafo(1.5rem,$texto);
+      }
+    }
+  }
+}
+
+// SECCIÓN GALERÍA
+
+.galeria {
+  .contenedor-tarjetas {
+    @include rejilla(30rem);
+  }
+  .tarjeta {
+    overflow: hidden;
+    position: relative;
+    height: 25rem;
+
+    &:hover {
+      box-shadow: $sombra;
+      border: $borde;
+
+      .contenido {
+        background-color: $fondo-gris-claro;
+        transform: translateY(0);
+      }
+      img {
+        transform: translateY(-100%);
+      }
+      // video{
+      //     transform: translateY(-100%);
+      //     }
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    video {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .contenido {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: $neutro-blanco;
+      text-align: center;
+      padding: 3rem, 2rem;
+      height: 100%;
+      width: 100%;
+      transform: translateY(100%);
+      padding-top: 4rem;
+
+      h3 {
+        @include texto-titulo(2rem,$titulo);
+      }
+      p {
+        padding: 0.5rem 0;
+        margin-left: 2%;
+        margin-right: 2%;
+
+        @include texto-parrafo(1.5rem,$texto);
+      }
+    }
+  }
+}
+
+// SECCIÓN RESEÑAS
+
+.criticas {
+  background: $fondo-gris-claro;
+  .contenedor-tarjetas {
+    @include rejilla(30rem);
+    .tarjeta {
+      text-align: center;
+      padding: 3rem 2rem;
+      border-radius: 0.5rem;
+
+      &:hover {
+        background: $neutro-blanco;
+        box-shadow: $sombra;
+        transform: translateY(-1rem);
+      }
+
+      .img {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+        margin-bottom: 1.5rem;
+      }
+
+      h3 {
+        @include texto-titulo(2rem,$titulo);
+      }
+
+      p {
+        @include texto-parrafo(1.6rem,$texto);
+        padding: 1rem 0;
+      }
+
+      .estrellas {
+        margin-top: 1rem;
+
+        i {
+          font-size: 1.7rem;
+          color: $primario-oscuro;
+        }
+      }
+    }
+    a {
+      text-align: center;
+    }
+  }
+}
+
+// SECCIÓN CONTACTO
+
+.contacto{
+
+  .contenedor-tarjetas{
+  @include rejilla(30rem);
+  margin-bottom:3rem;
+
+  .tarjeta{
+  border: $borde;
+  padding: 3rem 2rem;
+  text-align: center;
+
+  &:hover i{
+    background: $primario;
+    color: $neutro-blanco;
+  }
+
+
+  i{
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  border: $borde;
+  color: $primario;
+  font-size: 2rem;
+
+  h3{
+  @include texto-titulo(2rem,$titulo);
+  padding: 1rem 0;
+  }
+
+  p{
+  @include texto-parrafo(1.5rem,$texto);
+  }
+  }
+  }
+  
+  }
+
+  form{
+    h3{
+    @include texto-titulo(3rem,$titulo);
+    padding-bottom: 1rem;
+    }
+
+    .cuadro{
+      margin: 1rem 0;
+      border: $borde;
+      font-size: 1.6rem;
+      width: 100%;
+      padding: 1.2rem 1.4rem;
+
+      &:focus{
+      background: $primario-oscuro;
+      color: $neutro-blanco;
+
+      &::placeholder{
+      color: $fondo-gris-claro;
+      }
+      
+      }
+    }
+
+    textarea{
+    height: 15rem;
+    resize: none;
+    }
+
+  }
+// .contacto .mapa{
+//   height: 25rem;
+// }
+  
+}
+
+// SECCIÓN FOOTER
+
+.footer{
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url(../img/footer.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  .logo{
+    font-size:4.5rem;
+    color: $neutro-blanco;
+  }
+  .parrafo{
+  margin:2rem 0;
+  @include texto-titulo(2rem,$titulo);
+  color: $neutro-blanco;
+
+  span{
+    text-decoration: underline !important;
+  
+  }
+
+  }
+
+  .redes{
+  margin-top: 3rem;
+
+  a{
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  border: $borde;
+  color: $primario;
+  margin: 0 .3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  &:hover{
+  background: $primario;
+  color: $neutro-blanco;
+  }
+  }
+  }
+}
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 55%;
+    scroll-padding-top: 8rem;
+  }
+
+  .inicio h3 {
+    font-size: 4rem;
+  }
+
+  section {
+    padding: 3rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .login-form form {
+    padding: 3rem 2rem;
+
+    h3 {
+      font-size: 1.7rem;
+    }
+  }
+
+  .header {
+    padding: 4rem 2rem;
+
+    &.mostrar {
+      padding: 2rem;
+    }
+
+    #boton-menu {
+      display: inline-block;
+    }
+
+    .nav {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background: $neutro-blanco;
+      flex-flow: column;
+      padding: 1rem 0;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+      &.mostrar {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+
+      a {
+        margin: 1rem 2rem;
+        color: $neutro-negro;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  html {
+    font-size: 50%;
+  }
+}

@@ -1,0 +1,537 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@100;200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none !important;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: #f9bf2d;
+}
+
+.boton-link {
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  display: inline-block;
+  border: 0.1rem solid #f9bf2d;
+  color: #f9bf2d;
+  background: none;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+.boton-link:hover {
+  background: #f9bf2d;
+  color: #ffffff;
+}
+
+.cabecera {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-family: "Lora", serif;
+  font-size: 3rem;
+  color: #000000;
+}
+
+.header {
+  z-index: 1000;
+  padding: 4rem 0;
+}
+.header.mostrar {
+  padding: 2rem 0;
+  background: #c49000;
+}
+.header .logo {
+  font-size: 4.5rem;
+  color: #ffffff;
+}
+.header .nav a {
+  font-size: 2rem;
+  margin-right: 2rem;
+  color: #ffffff;
+}
+.header .nav a:hover {
+  text-decoration: underline !important;
+  text-underline-offset: 0.5rem;
+}
+.header .iconos div {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.header #boton-menu {
+  display: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translate(-2rem);
+    opacity: 0;
+  }
+}
+section {
+  padding: 5rem 1rem;
+}
+
+.login-form {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+.login-form.mostrar {
+  display: flex;
+}
+.login-form form {
+  width: 50rem;
+  padding: 4rem;
+  background: #ffffff;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.2s linear;
+}
+.login-form form #cerrar-login-form {
+  position: absolute;
+  top: -4rem;
+  right: 0;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #ffffff;
+}
+.login-form form h3 {
+  padding: 1rem 0;
+  font-family: "Lora", serif;
+  font-size: 2rem;
+  color: #000000;
+  margin-top: 1rem;
+}
+.login-form form .cuadro {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  border: 0.1rem solid #f9bf2d;
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+.login-form form .dialogo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+.login-form form .dialogo label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #666;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.login-form form .dialogo a {
+  font-size: 1.5rem;
+  color: #f9bf2d;
+  margin-left: auto;
+}
+.login-form form .dialogo a:hover {
+  text-decoration: underline !important;
+}
+.login-form form .boton-link {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.login-form form .cuenta {
+  padding: 1.5rem 0.5rem;
+  background: #eee;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #666;
+  margin-bottom: 0;
+}
+.login-form form .cuenta a {
+  color: #f9bf2d;
+}
+.login-form form .cuenta a:hover {
+  text-decoration: underline !important;
+}
+
+.inicio {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/fondo.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.inicio span {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+.inicio h3 {
+  padding: 1rem 0;
+  font-size: 3rem;
+  color: #ffffff;
+}
+.inicio .boton-link {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.info span {
+  font-size: 2.5rem;
+  color: #f9bf2d;
+}
+.info .titulo {
+  padding-top: 1rem;
+  font-family: "Lora", serif;
+  font-size: 3rem;
+  color: #000000;
+}
+.info p {
+  padding: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #666;
+  margin-bottom: 0;
+}
+.info .contenedor-iconos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  gap: 1.5rem;
+}
+.info .contenedor-iconos .iconos {
+  padding: 2rem;
+  background: #eee;
+  text-align: center;
+  flex: 1 1 14rem;
+}
+.info .contenedor-iconos .iconos i {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  color: #f9bf2d;
+}
+.info .contenedor-iconos .iconos h3 {
+  font-family: "Lora", serif;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.catalogo {
+  background: #eee;
+}
+.catalogo .contenedor-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.catalogo .contenedor-tarjetas .tarjeta {
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
+}
+.catalogo .contenedor-tarjetas .tarjeta:hover {
+  background: #ffffff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transform: translateY(-1rem);
+}
+.catalogo .contenedor-tarjetas .tarjeta img {
+  height: 15rem;
+  margin-bottom: 1rem;
+}
+.catalogo .contenedor-tarjetas .tarjeta h3 {
+  font-family: "Lora", serif;
+  font-size: 2rem;
+  color: #000000;
+}
+.catalogo .contenedor-tarjetas .tarjeta p {
+  padding: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.galeria .contenedor-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.galeria .tarjeta {
+  overflow: hidden;
+  position: relative;
+  height: 25rem;
+}
+.galeria .tarjeta:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid #f9bf2d;
+}
+.galeria .tarjeta:hover .contenido {
+  background-color: #eee;
+  transform: translateY(0);
+}
+.galeria .tarjeta:hover img {
+  transform: translateY(-100%);
+}
+.galeria .tarjeta img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.galeria .tarjeta video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.galeria .tarjeta .contenido {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  text-align: center;
+  padding: 3rem, 2rem;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  padding-top: 4rem;
+}
+.galeria .tarjeta .contenido h3 {
+  font-family: "Lora", serif;
+  font-size: 2rem;
+  color: #000000;
+}
+.galeria .tarjeta .contenido p {
+  padding: 0.5rem 0;
+  margin-left: 2%;
+  margin-right: 2%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.criticas {
+  background: #eee;
+}
+.criticas .contenedor-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.criticas .contenedor-tarjetas .tarjeta {
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
+}
+.criticas .contenedor-tarjetas .tarjeta:hover {
+  background: #ffffff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transform: translateY(-1rem);
+}
+.criticas .contenedor-tarjetas .tarjeta .img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+.criticas .contenedor-tarjetas .tarjeta h3 {
+  font-family: "Lora", serif;
+  font-size: 2rem;
+  color: #000000;
+}
+.criticas .contenedor-tarjetas .tarjeta p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #666;
+  margin-bottom: 0;
+  padding: 1rem 0;
+}
+.criticas .contenedor-tarjetas .tarjeta .estrellas {
+  margin-top: 1rem;
+}
+.criticas .contenedor-tarjetas .tarjeta .estrellas i {
+  font-size: 1.7rem;
+  color: #c49000;
+}
+.criticas .contenedor-tarjetas a {
+  text-align: center;
+}
+
+.contacto .contenedor-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.contacto .contenedor-tarjetas .tarjeta {
+  border: 0.1rem solid #f9bf2d;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.contacto .contenedor-tarjetas .tarjeta:hover i {
+  background: #f9bf2d;
+  color: #ffffff;
+}
+.contacto .contenedor-tarjetas .tarjeta i {
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  border: 0.1rem solid #f9bf2d;
+  color: #f9bf2d;
+  font-size: 2rem;
+}
+.contacto .contenedor-tarjetas .tarjeta i h3 {
+  font-family: "Lora", serif;
+  font-size: 2rem;
+  color: #000000;
+  padding: 1rem 0;
+}
+.contacto .contenedor-tarjetas .tarjeta i p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #666;
+  margin-bottom: 0;
+}
+.contacto form h3 {
+  font-family: "Lora", serif;
+  font-size: 3rem;
+  color: #000000;
+  padding-bottom: 1rem;
+}
+.contacto form .cuadro {
+  margin: 1rem 0;
+  border: 0.1rem solid #f9bf2d;
+  font-size: 1.6rem;
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+}
+.contacto form .cuadro:focus {
+  background: #c49000;
+  color: #ffffff;
+}
+.contacto form .cuadro:focus::placeholder {
+  color: #eee;
+}
+.contacto form textarea {
+  height: 15rem;
+  resize: none;
+}
+
+.footer {
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/footer.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.footer .logo {
+  font-size: 4.5rem;
+  color: #ffffff;
+}
+.footer .parrafo {
+  margin: 2rem 0;
+  font-family: "Lora", serif;
+  font-size: 2rem;
+  color: #000000;
+  color: #ffffff;
+}
+.footer .parrafo span {
+  text-decoration: underline !important;
+}
+.footer .redes {
+  margin-top: 3rem;
+}
+.footer .redes a {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  border: 0.1rem solid #f9bf2d;
+  color: #f9bf2d;
+  margin: 0 0.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.footer .redes a:hover {
+  background: #f9bf2d;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 55%;
+    scroll-padding-top: 8rem;
+  }
+  .inicio h3 {
+    font-size: 4rem;
+  }
+  section {
+    padding: 3rem 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .login-form form {
+    padding: 3rem 2rem;
+  }
+  .login-form form h3 {
+    font-size: 1.7rem;
+  }
+  .header {
+    padding: 4rem 2rem;
+  }
+  .header.mostrar {
+    padding: 2rem;
+  }
+  .header #boton-menu {
+    display: inline-block;
+  }
+  .header .nav {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    flex-flow: column;
+    padding: 1rem 0;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .nav.mostrar {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .nav a {
+    margin: 1rem 2rem;
+    color: #000000;
+  }
+}
+@media screen and (max-width: 460px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
