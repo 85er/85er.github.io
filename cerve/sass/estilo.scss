@@ -14,13 +14,13 @@
   transition: all 0.2s linear;
 }
 
-// PALETA DE COLORES Y FUENTES
+// VARIABLES PALETA DE COLORES Y FUENTES
 
 $texto: "Montserrat", sans-serif;
 $titulo: "Lora", serif;
 $primario: #f9bf2d;
 $primario-oscuro: #c49000;
-$neutro-gris-claro: #666;
+$neutro-gris-oscuro: #666;
 $fondo-gris-claro: #eee;
 $neutro-negro: #000000;
 $neutro-blanco: #ffffff;
@@ -46,7 +46,7 @@ $sombra: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   font-family: $letra;
   font-size: $parametro;
   line-height: 2;
-  color: $neutro-gris-claro;
+  color: $neutro-gris-oscuro;
   margin-bottom: 0;
 }
 
